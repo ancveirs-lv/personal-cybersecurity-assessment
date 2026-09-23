@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "assessment_id": "PCSA",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "language": "en",
   "canonical_language": "en",
   "audience": "individuals and households",
@@ -9,23 +9,33 @@
   "states": [
     {
       "id": "UNKNOWN",
-      "label": "Not sure"
+      "label": "Not sure",
+      "meaning": "The current practice is not known."
     },
     {
       "id": "NOT_IN_PLACE",
-      "label": "Not in place"
+      "label": "Not in place",
+      "meaning": "The protective practice is absent in relevant situations."
     },
     {
       "id": "PARTIAL",
-      "label": "Partly / inconsistently"
+      "label": "Partly / inconsistently",
+      "meaning": "The practice is present only for some relevant accounts, devices or situations."
     },
     {
       "id": "CONSISTENT",
-      "label": "Consistently in place"
+      "label": "Consistently in place",
+      "meaning": "The practice is applied consistently in relevant situations."
     },
     {
       "id": "VERIFIED",
-      "label": "Checked or tested"
+      "label": "Checked or tested",
+      "meaning": "The practice has been checked or tested recently."
+    },
+    {
+      "id": "NOT_APPLICABLE",
+      "label": "Not applicable",
+      "meaning": "The item is genuinely irrelevant to the person's situation; a rationale is required."
     }
   ],
   "gap_states": [
@@ -261,7 +271,7 @@
       "recommended_action": "Consider a reputable protective DNS or equivalent network protection appropriate to your environment.",
       "priority": "normal",
       "source_refs": [
-        "ncsc_top_tips"
+        "ncsc_pdns_private_sector"
       ]
     },
     {

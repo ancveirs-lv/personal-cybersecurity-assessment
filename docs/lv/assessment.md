@@ -4,11 +4,12 @@
 
 ## Atbilžu stāvokļi
 
-- `UNKNOWN` — Neesmu pārliecināts
-- `NOT_IN_PLACE` — Nav ieviests
-- `PARTIAL` — Daļēji / nekonsekventi
-- `CONSISTENT` — Konsekventi ieviests
-- `VERIFIED` — Pārbaudīts vai testēts
+- `UNKNOWN` — Neesmu pārliecināts: Pašreizējā prakse nav zināma.
+- `NOT_IN_PLACE` — Nav ieviests: Aizsardzības prakse attiecīgajās situācijās nav ieviesta.
+- `PARTIAL` — Daļēji / nekonsekventi: Prakse ir ieviesta tikai daļai attiecīgo kontu, ierīču vai situāciju.
+- `CONSISTENT` — Konsekventi ieviests: Prakse tiek konsekventi piemērota attiecīgajās situācijās.
+- `VERIFIED` — Pārbaudīts vai testēts: Prakse nesen ir pārbaudīta vai testēta.
+- `NOT_APPLICABLE` — Nav attiecināms: Punkts patiešām neattiecas uz personas situāciju; nepieciešams pamatojums.
 
 ## Novērtējums
 

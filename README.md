@@ -14,9 +14,13 @@ This repository is a **gap-to-action instrument**, not a quiz that declares a pe
 
 ## Response model
 
-`UNKNOWN → NOT_IN_PLACE → PARTIAL → CONSISTENT → VERIFIED`
+`UNKNOWN → NOT_IN_PLACE → PARTIAL → CONSISTENT → VERIFIED` · `NOT_APPLICABLE` with rationale
 
 Unknown areas remain visible. The project intentionally does **not** produce a single overall safety, compliance or maturity score.
+
+Response-state meanings are part of the machine-readable methodology contract in `data/assessment.en.json`; the states are not numerical scores.
+
+`NOT_APPLICABLE` is reserved for genuinely irrelevant items and requires a rationale in structured assessment input.
 
 ## Quick start
 
@@ -45,7 +49,7 @@ Assessment items are original project wording informed by registered sources. Re
 
 ## Version status
 
-`v0.1.0` is a **pilot baseline** for review and calibration before a stable 1.0 release.
+`v0.1.1` is a **pilot baseline** for review and calibration before a stable 1.0 release.
 
 ## Author
 

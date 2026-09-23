@@ -1,6 +1,6 @@
 {
   "assessment_id": "PCSA",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "answers": {
     "P01": "UNKNOWN",
     "P02": "NOT_IN_PLACE",

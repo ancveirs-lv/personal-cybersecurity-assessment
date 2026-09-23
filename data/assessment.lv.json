@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "assessment_id": "PCSA",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "language": "lv",
   "canonical_language": "en",
   "audience": "ikviens lietotājs un mājsaimniecības",
@@ -9,23 +9,33 @@
   "states": [
     {
       "id": "UNKNOWN",
-      "label": "Neesmu pārliecināts"
+      "label": "Neesmu pārliecināts",
+      "meaning": "Pašreizējā prakse nav zināma."
     },
     {
       "id": "NOT_IN_PLACE",
-      "label": "Nav ieviests"
+      "label": "Nav ieviests",
+      "meaning": "Aizsardzības prakse attiecīgajās situācijās nav ieviesta."
     },
     {
       "id": "PARTIAL",
-      "label": "Daļēji / nekonsekventi"
+      "label": "Daļēji / nekonsekventi",
+      "meaning": "Prakse ir ieviesta tikai daļai attiecīgo kontu, ierīču vai situāciju."
     },
     {
       "id": "CONSISTENT",
-      "label": "Konsekventi ieviests"
+      "label": "Konsekventi ieviests",
+      "meaning": "Prakse tiek konsekventi piemērota attiecīgajās situācijās."
     },
     {
       "id": "VERIFIED",
-      "label": "Pārbaudīts vai testēts"
+      "label": "Pārbaudīts vai testēts",
+      "meaning": "Prakse nesen ir pārbaudīta vai testēta."
+    },
+    {
+      "id": "NOT_APPLICABLE",
+      "label": "Nav attiecināms",
+      "meaning": "Punkts patiešām neattiecas uz personas situāciju; nepieciešams pamatojums."
     }
   ],
   "gap_states": [
