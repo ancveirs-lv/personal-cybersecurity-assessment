@@ -4,7 +4,7 @@
   "title_en": "Personal Cybersecurity Self-Assessment",
   "title_lv": "Personīgās kiberdrošības pašnovērtējums ikvienam",
   "assessment_id": "PCSA",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "expected_item_count": 24,
   "domain_ids": [
     "ACCOUNTS",
@@ -19,11 +19,14 @@
     "NOT_IN_PLACE",
     "PARTIAL",
     "CONSISTENT",
-    "VERIFIED"
+    "VERIFIED",
+    "NOT_APPLICABLE"
   ],
   "assessment_type": "practice",
   "global_english": true,
   "method_note_en": "This is practical self-assessment guidance, not a guarantee of safety, legal advice or a substitute for incident-response support.",
   "method_note_lv": "Šis ir praktisks pašnovērtējuma materiāls, nevis drošības garantija, juridisks atzinums vai incidentu reaģēšanas palīdzības aizstājējs.",
-  "status": "pilot-baseline"
+  "status": "pilot-baseline",
+  "not_applicable_requires_note": true,
+  "state_semantics_required": true
 }

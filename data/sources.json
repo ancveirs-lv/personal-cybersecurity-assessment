@@ -27,6 +27,14 @@
       "publisher": "National Institute of Standards and Technology",
       "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
       "verified_at": "2026-09-23"
+    },
+    "ncsc_pdns_private_sector": {
+      "title": "Protective DNS for the private sector",
+      "publisher": "UK National Cyber Security Centre",
+      "url": "https://www.ncsc.gov.uk/guidance/protective-dns-for-private-sector",
+      "verified_at": "2026-09-23",
+      "scope": "Private-sector guidance; used here only for the protective-DNS concept.",
+      "use": "Conceptual support for optional protective DNS."
     }
   }
 }

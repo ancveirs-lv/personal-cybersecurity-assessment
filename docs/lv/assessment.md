@@ -9,6 +9,7 @@
 - `PARTIAL` — Daļēji / nekonsekventi
 - `CONSISTENT` — Konsekventi ieviests
 - `VERIFIED` — Pārbaudīts vai testēts
+- `NOT_APPLICABLE` — Nav attiecināms
 
 ## Novērtējums
 

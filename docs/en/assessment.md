@@ -9,6 +9,7 @@
 - `PARTIAL` — Partly / inconsistently
 - `CONSISTENT` — Consistently in place
 - `VERIFIED` — Checked or tested
+- `NOT_APPLICABLE` — Not applicable
 
 ## Assessment
 
@@ -180,7 +181,7 @@ I use protective DNS or equivalent network protection where appropriate and avai
 
 **Recommended action:** Consider a reputable protective DNS or equivalent network protection appropriate to your environment.
 
-**Sources:** `ncsc_top_tips`
+**Sources:** `ncsc_pdns_private_sector`
 
 ### Incident and recovery readiness
 
