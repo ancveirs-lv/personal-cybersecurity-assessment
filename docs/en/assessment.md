@@ -4,12 +4,12 @@
 
 ## Response states
 
-- `UNKNOWN` — Not sure
-- `NOT_IN_PLACE` — Not in place
-- `PARTIAL` — Partly / inconsistently
-- `CONSISTENT` — Consistently in place
-- `VERIFIED` — Checked or tested
-- `NOT_APPLICABLE` — Not applicable
+- `UNKNOWN` — Not sure: The current practice is not known.
+- `NOT_IN_PLACE` — Not in place: The protective practice is absent in relevant situations.
+- `PARTIAL` — Partly / inconsistently: The practice is present only for some relevant accounts, devices or situations.
+- `CONSISTENT` — Consistently in place: The practice is applied consistently in relevant situations.
+- `VERIFIED` — Checked or tested: The practice has been checked or tested recently.
+- `NOT_APPLICABLE` — Not applicable: The item is genuinely irrelevant to the person's situation; a rationale is required.
 
 ## Assessment
 

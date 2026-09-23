@@ -129,5 +129,21 @@ class Tests(unittest.TestCase):
             self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
 
 
+    def test_example_version_matches(self):
+        meta = load("data/meta.json")
+        example = load("examples/answers.example.json")
+        self.assertEqual(example["version"], meta["version"])
+
+    def test_rendered_docs_include_state_meanings(self):
+        for lang, path in (
+            ("en", ROOT / "docs/en/assessment.md"),
+            ("lv", ROOT / "docs/lv/assessment.md"),
+        ):
+            payload = load(f"data/assessment.{lang}.json")
+            rendered = path.read_text(encoding="utf-8")
+            for state in payload["states"]:
+                self.assertIn(state["meaning"], rendered)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -14,7 +14,7 @@ Repozitorijs ir **nepilnību-pārvēršanas-darbībās instruments**, nevis test
 
 ## Atbilžu modelis
 
-`UNKNOWN → NOT_IN_PLACE → PARTIAL → CONSISTENT → VERIFIED`
+`UNKNOWN → NOT_IN_PLACE → PARTIAL → CONSISTENT → VERIFIED` · `NOT_APPLICABLE` / `Nav attiecināms` ar pamatojumu
 
 Nezināmās zonas paliek redzamas. Projekts apzināti **nerada** vienu kopējo drošības, atbilstības vai brieduma skaitli.
 
