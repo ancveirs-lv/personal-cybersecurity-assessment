@@ -1,0 +1,30 @@
+{
+  "assessment_id": "PCSA",
+  "version": "0.1.0",
+  "answers": {
+    "P01": "UNKNOWN",
+    "P02": "NOT_IN_PLACE",
+    "P03": "PARTIAL",
+    "P04": "CONSISTENT",
+    "P05": "VERIFIED",
+    "P06": "UNKNOWN",
+    "P07": "NOT_IN_PLACE",
+    "P08": "PARTIAL",
+    "P09": "CONSISTENT",
+    "P10": "VERIFIED",
+    "P11": "UNKNOWN",
+    "P12": "NOT_IN_PLACE",
+    "P13": "PARTIAL",
+    "P14": "CONSISTENT",
+    "P15": "VERIFIED",
+    "P16": "UNKNOWN",
+    "P17": "NOT_IN_PLACE",
+    "P18": "PARTIAL",
+    "P19": "CONSISTENT",
+    "P20": "VERIFIED",
+    "P21": "UNKNOWN",
+    "P22": "NOT_IN_PLACE",
+    "P23": "PARTIAL",
+    "P24": "CONSISTENT"
+  }
+}

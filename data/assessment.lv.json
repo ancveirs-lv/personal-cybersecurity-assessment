@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "assessment_id": "PCSA",
+  "version": "0.1.0",
+  "language": "lv",
+  "canonical_language": "en",
+  "audience": "ikviens lietotājs un mājsaimniecības",
+  "assessment_type": "practice",
+  "states": [
+    {
+      "id": "UNKNOWN",
+      "label": "Neesmu pārliecināts"
+    },
+    {
+      "id": "NOT_IN_PLACE",
+      "label": "Nav ieviests"
+    },
+    {
+      "id": "PARTIAL",
+      "label": "Daļēji / nekonsekventi"
+    },
+    {
+      "id": "CONSISTENT",
+      "label": "Konsekventi ieviests"
+    },
+    {
+      "id": "VERIFIED",
+      "label": "Pārbaudīts vai testēts"
+    }
+  ],
+  "gap_states": [
+    "UNKNOWN",
+    "NOT_IN_PLACE",
+    "PARTIAL"
+  ],
+  "domains": [
+    {
+      "id": "ACCOUNTS",
+      "title": "Konti un autentifikācija"
+    },
+    {
+      "id": "DEVICES",
+      "title": "Ierīces un programmatūra"
+    },
+    {
+      "id": "DATA",
+      "title": "Dati un rezerves kopijas"
+    },
+    {
+      "id": "FRAUD",
+      "title": "Krāpšana un pārbaude"
+    },
+    {
+      "id": "NETWORKS",
+      "title": "Tīkli, lietotnes un koplietošana"
+    },
+    {
+      "id": "RECOVERY",
+      "title": "Incidenti un atkopšanas gatavība"
+    }
+  ],
+  "items": [
+    {
+      "id": "P01",
+      "domain": "ACCOUNTS",
+      "prompt": "Svarīgiem kontiem tiek izmantotas unikālas paroles vai passkey, nevis atkārtoti lietotas paroles.",
+      "recommended_action": "Sāc ar galveno e-pastu un banku; novērs atkārtoti lietotas paroles.",
+      "priority": "high",
+      "source_refs": [
+        "nist_sp800_63b",
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P02",
+      "domain": "ACCOUNTS",
+      "prompt": "Parolēm, kas jāglabā, tiek izmantots paroļu pārvaldnieks vai līdzvērtīga droša metode.",
+      "recommended_action": "Izmanto aizsargātu paroļu glabātuvi un aizsargā tās kontu.",
+      "priority": "high",
+      "source_refs": [
+        "nist_sp800_63b",
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P03",
+      "domain": "ACCOUNTS",
+      "prompt": "Svarīgiem kontiem, kur iespējams, ir ieslēgta daudzfaktoru vai pret pikšķerēšanu noturīga autentifikācija.",
+      "recommended_action": "Vispirms ieslēdz passkey vai stipru MFA augstas ietekmes kontiem.",
+      "priority": "high",
+      "source_refs": [
+        "nist_sp800_63b",
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P04",
+      "domain": "ACCOUNTS",
+      "prompt": "Atkopšanas kanāli, atkopšanas kodi un aktīvās sesijas ir aktuālas un manā kontrolē.",
+      "recommended_action": "Pārskati atkopšanas kanālus un noņem novecojušas sesijas un ierīces.",
+      "priority": "high",
+      "source_refs": [
+        "nist_sp800_63b"
+      ]
+    },
+    {
+      "id": "P05",
+      "domain": "DEVICES",
+      "prompt": "Telefoni un datori izmanto ekrāna bloķēšanu un netiek atstāti brīvi pieejami.",
+      "recommended_action": "Ieslēdz piemērotu ierīces bloķēšanu un saprātīgu automātiskās bloķēšanas laiku.",
+      "priority": "normal",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P06",
+      "domain": "DEVICES",
+      "prompt": "Operētājsistēmas, pārlūki un svarīgas lietotnes savlaicīgi saņem drošības atjauninājumus.",
+      "recommended_action": "Kur piemērots, ieslēdz automātiskos atjauninājumus un uzstādi neieviestos drošības atjauninājumus.",
+      "priority": "high",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P07",
+      "domain": "DEVICES",
+      "prompt": "Iebūvētie drošības aizsardzības līdzekļi ir ieslēgti, un es zinu, vai ierīce vairs netiek atbalstīta.",
+      "recommended_action": "Pārbaudi drošības iestatījumus un identificē neatbalstītas ierīces.",
+      "priority": "normal",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P08",
+      "domain": "DEVICES",
+      "prompt": "Vecas, pazaudētas vai pārdotas ierīces ir atvienotas no svarīgiem kontiem un apstrādātas droši.",
+      "recommended_action": "Pārskati uzticamo ierīču sarakstus un pirms nodošanas droši dzēs ierīces.",
+      "priority": "normal",
+      "source_refs": [
+        "nist_sp800_63b"
+      ]
+    },
+    {
+      "id": "P09",
+      "domain": "DATA",
+      "prompt": "Svarīgiem fotoattēliem, dokumentiem un citiem datiem ir rezerves kopija ārpus galvenās ierīces.",
+      "recommended_action": "Datiem, kuru zudums būtu vissāpīgākais, izveido rezerves kopiju atsevišķā aizsargātā vietā.",
+      "priority": "high",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P10",
+      "domain": "DATA",
+      "prompt": "Es esmu pārbaudījis, ka vismaz vienu svarīgu rezerves kopiju tiešām var atjaunot.",
+      "recommended_action": "Atjauno testa failu vai kopiju un fiksē, kas izdevās.",
+      "priority": "high",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P11",
+      "domain": "DATA",
+      "prompt": "Sensitīvi faili un mākoņkrātuves ir aizsargātas ar atbilstošiem konta un koplietošanas iestatījumiem.",
+      "recommended_action": "Pārskati mākoņkoplietošanas saites, tiesības un konta aizsardzību.",
+      "priority": "normal",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P12",
+      "domain": "DATA",
+      "prompt": "Es neglabāju paroles, atkopšanas kodus vai sensitīvus noslēpumus brīvi nolasāmās piezīmēs vai ziņās.",
+      "recommended_action": "Pārvieto atklāti glabātus noslēpumus uz aizsargātu glabātuvi un dzēs nevajadzīgās kopijas.",
+      "priority": "high",
+      "source_refs": [
+        "nist_sp800_63b"
+      ]
+    },
+    {
+      "id": "P13",
+      "domain": "FRAUD",
+      "prompt": "Negaidīta steidzamība, slepenība vai emocionāls spiediens liek man apstāties pirms rīcības.",
+      "recommended_action": "Pieprasījumiem par naudu vai piekļuves datiem izmanto apzinātu pauzes noteikumu.",
+      "priority": "high",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P14",
+      "domain": "FRAUD",
+      "prompt": "Svarīgām darbībām es pats atveru oficiālo pakalpojumu, nevis uzticos saitei ziņā.",
+      "recommended_action": "Bankas un konta izmaiņām pats atver zināmo oficiālo pakalpojumu.",
+      "priority": "high",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P15",
+      "domain": "FRAUD",
+      "prompt": "Neparastus pieprasījumus no zināmiem cilvēkiem vai organizācijām es pārbaudu citā kanālā.",
+      "recommended_action": "Pirms rīcības izmanto atsevišķi zināmu saziņas kanālu.",
+      "priority": "normal",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P16",
+      "domain": "FRAUD",
+      "prompt": "Es neinstalēju attālinātās piekļuves programmas un nedalos ar verifikācijas kodiem pēc negaidīta zvanītāja vai ziņas norādes.",
+      "recommended_action": "Negaidītu attālinātās piekļuves vai kodu izpaušanas pieprasījumu uztver kā apstāšanās signālu.",
+      "priority": "high",
+      "source_refs": [
+        "nist_sp800_63b",
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P17",
+      "domain": "NETWORKS",
+      "prompt": "Mājas rūterim/Wi-Fi ir aktuāli drošības iestatījumi un nav noklusējuma administratora piekļuves datu.",
+      "recommended_action": "Pārskati rūtera administratora piekļuves datus, atjauninājumu statusu un bezvadu drošības režīmu.",
+      "priority": "normal",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P18",
+      "domain": "NETWORKS",
+      "prompt": "Es nesaglabāju paroles un neatstāju atvērtas sesijas koplietotās vai publiskās ierīcēs.",
+      "recommended_action": "Koplietotās ierīcēs nesaglabā piekļuves datus un pilnībā izraksties.",
+      "priority": "high",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P19",
+      "domain": "NETWORKS",
+      "prompt": "Es periodiski pārskatu lietotņu atļaujas un noņemu nevajadzīgas piekļuves.",
+      "recommended_action": "Pārskati atrašanās vietas, kontaktu, mikrofona, kameras un kontu atļaujas.",
+      "priority": "normal",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P20",
+      "domain": "NETWORKS",
+      "prompt": "Es izmantoju aizsargājošu DNS vai līdzvērtīgu tīkla aizsardzību, ja tas ir piemēroti un pieejams.",
+      "recommended_action": "Apsver uzticamu aizsargājošu DNS pakalpojumu; Latvijā izvērtē CERT.LV/NIC.LV DNS ugunsmūri.",
+      "priority": "normal",
+      "source_refs": [
+        "certlv_dns"
+      ]
+    },
+    {
+      "id": "P21",
+      "domain": "RECOVERY",
+      "prompt": "Es zinu pirmās darbības, kas jāveic svarīga konta kompromitācijas gadījumā.",
+      "recommended_action": "Pieraksti īsu atkopšanas secību: atgūsti kontroli, nomaini vai atsauc piekļuves datus un pārskati atkopšanas iestatījumus.",
+      "priority": "high",
+      "source_refs": [
+        "nist_sp800_63b"
+      ]
+    },
+    {
+      "id": "P22",
+      "domain": "RECOVERY",
+      "prompt": "Es zinu, kā pēc aizdomām par kompromitāciju atsaukt vecas sesijas, ierīces vai piekļuves datus.",
+      "recommended_action": "Atrodi galvenā e-pasta sesiju/ierīču pārvaldības sadaļu, pirms tā kļūst vajadzīga.",
+      "priority": "normal",
+      "source_refs": [
+        "nist_sp800_63b"
+      ]
+    },
+    {
+      "id": "P23",
+      "domain": "RECOVERY",
+      "prompt": "Es zinu, kur ziņot par kiberincidentiem vai krāpšanu un kad finansiāla zaudējuma gadījumā jāsazinās arī ar banku vai policiju.",
+      "recommended_action": "Saglabā oficiālos ziņošanas un bankas kontaktus pirms incidenta.",
+      "priority": "high",
+      "source_refs": [
+        "certlv_services"
+      ]
+    },
+    {
+      "id": "P24",
+      "domain": "RECOVERY",
+      "prompt": "Pēc drošības incidenta es pārbaudu, kas vēl var būt skarts, nevis salaboju tikai redzamo simptomu.",
+      "recommended_action": "Pārbaudi saistītos kontus, atkopšanas kanālus, maksājumu metodes un skartās ierīces.",
+      "priority": "normal",
+      "source_refs": [
+        "nist_sp800_63b",
+        "ncsc_top_tips"
+      ]
+    }
+  ]
+}

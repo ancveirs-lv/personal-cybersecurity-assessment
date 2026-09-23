@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "repository": "ancveirs-lv/personal-cybersecurity-assessment",
+  "title_en": "Personal Cybersecurity Self-Assessment",
+  "title_lv": "Personīgās kiberdrošības pašnovērtējums ikvienam",
+  "assessment_id": "PCSA",
+  "version": "0.1.0",
+  "expected_item_count": 24,
+  "domain_ids": [
+    "ACCOUNTS",
+    "DEVICES",
+    "DATA",
+    "FRAUD",
+    "NETWORKS",
+    "RECOVERY"
+  ],
+  "state_ids": [
+    "UNKNOWN",
+    "NOT_IN_PLACE",
+    "PARTIAL",
+    "CONSISTENT",
+    "VERIFIED"
+  ],
+  "assessment_type": "practice",
+  "global_english": true,
+  "method_note_en": "This is practical self-assessment guidance, not a guarantee of safety, legal advice or a substitute for incident-response support.",
+  "method_note_lv": "Šis ir praktisks pašnovērtējuma materiāls, nevis drošības garantija, juridisks atzinums vai incidentu reaģēšanas palīdzības aizstājējs.",
+  "status": "pilot-baseline"
+}

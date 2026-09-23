@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "family": "Open Self-Assessment Family",
+  "repositories": [
+    {
+      "name": "executive-digital-governance-assessment",
+      "title": "Executive Digital Governance Self-Assessment"
+    },
+    {
+      "name": "digital-competence-self-assessment",
+      "title": "Digital Competence Self-Assessment"
+    },
+    {
+      "name": "cybersecurity-readiness-assessment",
+      "title": "Cybersecurity Readiness Self-Assessment"
+    },
+    {
+      "name": "personal-cybersecurity-assessment",
+      "title": "Personal Cybersecurity Self-Assessment"
+    }
+  ]
+}

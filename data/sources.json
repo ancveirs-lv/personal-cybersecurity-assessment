@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-09-23",
+  "sources": {
+    "certlv_dns": {
+      "title": "CERT.LV DNS ugunsmūris",
+      "publisher": "CERT.LV",
+      "url": "https://www.cert.lv/lv/par-mums/cert-lv-dns-ugunsmuris",
+      "verified_at": "2026-09-23",
+      "localisation": "Latvia"
+    },
+    "certlv_services": {
+      "title": "CERT.LV pakalpojumi un incidentu ziņošana",
+      "publisher": "CERT.LV",
+      "url": "https://cert.lv/lv/pakalpojumi",
+      "verified_at": "2026-09-23",
+      "localisation": "Latvia"
+    },
+    "ncsc_top_tips": {
+      "title": "Top tips for staying secure online",
+      "publisher": "UK National Cyber Security Centre",
+      "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online",
+      "verified_at": "2026-09-23"
+    },
+    "nist_sp800_63b": {
+      "title": "NIST SP 800-63B-4 — Authentication and Authenticator Management",
+      "publisher": "National Institute of Standards and Technology",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "verified_at": "2026-09-23"
+    }
+  }
+}

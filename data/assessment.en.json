@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "assessment_id": "PCSA",
+  "version": "0.1.0",
+  "language": "en",
+  "canonical_language": "en",
+  "audience": "individuals and households",
+  "assessment_type": "practice",
+  "states": [
+    {
+      "id": "UNKNOWN",
+      "label": "Not sure"
+    },
+    {
+      "id": "NOT_IN_PLACE",
+      "label": "Not in place"
+    },
+    {
+      "id": "PARTIAL",
+      "label": "Partly / inconsistently"
+    },
+    {
+      "id": "CONSISTENT",
+      "label": "Consistently in place"
+    },
+    {
+      "id": "VERIFIED",
+      "label": "Checked or tested"
+    }
+  ],
+  "gap_states": [
+    "UNKNOWN",
+    "NOT_IN_PLACE",
+    "PARTIAL"
+  ],
+  "domains": [
+    {
+      "id": "ACCOUNTS",
+      "title": "Accounts and authentication"
+    },
+    {
+      "id": "DEVICES",
+      "title": "Devices and software"
+    },
+    {
+      "id": "DATA",
+      "title": "Data and backups"
+    },
+    {
+      "id": "FRAUD",
+      "title": "Fraud and verification"
+    },
+    {
+      "id": "NETWORKS",
+      "title": "Networks, apps and sharing"
+    },
+    {
+      "id": "RECOVERY",
+      "title": "Incident and recovery readiness"
+    }
+  ],
+  "items": [
+    {
+      "id": "P01",
+      "domain": "ACCOUNTS",
+      "prompt": "Important accounts use unique passwords or passkeys rather than reused passwords.",
+      "recommended_action": "Start with primary email and banking; remove reused passwords.",
+      "priority": "high",
+      "source_refs": [
+        "nist_sp800_63b",
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P02",
+      "domain": "ACCOUNTS",
+      "prompt": "A password manager or equivalent safe method is used for passwords that must be stored.",
+      "recommended_action": "Adopt protected password storage and secure its account.",
+      "priority": "high",
+      "source_refs": [
+        "nist_sp800_63b",
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P03",
+      "domain": "ACCOUNTS",
+      "prompt": "Multi-factor or phishing-resistant authentication is enabled on important accounts where available.",
+      "recommended_action": "Enable passkeys or strong MFA on high-impact accounts first.",
+      "priority": "high",
+      "source_refs": [
+        "nist_sp800_63b",
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P04",
+      "domain": "ACCOUNTS",
+      "prompt": "Recovery channels, recovery codes and active sessions are current and under my control.",
+      "recommended_action": "Review recovery channels and remove obsolete sessions and devices.",
+      "priority": "high",
+      "source_refs": [
+        "nist_sp800_63b"
+      ]
+    },
+    {
+      "id": "P05",
+      "domain": "DEVICES",
+      "prompt": "Phones and computers use a screen lock and are not left openly accessible.",
+      "recommended_action": "Enable a suitable device lock and reasonable auto-lock delay.",
+      "priority": "normal",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P06",
+      "domain": "DEVICES",
+      "prompt": "Operating systems, browsers and important apps receive security updates promptly.",
+      "recommended_action": "Enable automatic updates where suitable and install outstanding security updates.",
+      "priority": "high",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P07",
+      "domain": "DEVICES",
+      "prompt": "Built-in security protections are enabled and I know if a device is no longer supported.",
+      "recommended_action": "Check security settings and identify unsupported devices.",
+      "priority": "normal",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P08",
+      "domain": "DEVICES",
+      "prompt": "Old, lost or sold devices are removed from important accounts and handled securely.",
+      "recommended_action": "Review trusted-device lists and securely erase devices before transfer.",
+      "priority": "normal",
+      "source_refs": [
+        "nist_sp800_63b"
+      ]
+    },
+    {
+      "id": "P09",
+      "domain": "DATA",
+      "prompt": "Important photos, documents and other data have a backup outside the primary device.",
+      "recommended_action": "Back up the data you would most regret losing to a separate protected location.",
+      "priority": "high",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P10",
+      "domain": "DATA",
+      "prompt": "I have verified that at least one important backup can actually be restored.",
+      "recommended_action": "Restore a sample file or backup and note what worked.",
+      "priority": "high",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P11",
+      "domain": "DATA",
+      "prompt": "Sensitive files and cloud storage are protected by appropriate account and sharing controls.",
+      "recommended_action": "Review cloud sharing links, permissions and account protection.",
+      "priority": "normal",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P12",
+      "domain": "DATA",
+      "prompt": "I avoid keeping passwords, recovery codes or sensitive secrets in openly readable notes or messages.",
+      "recommended_action": "Move exposed secrets to protected storage and remove unnecessary copies.",
+      "priority": "high",
+      "source_refs": [
+        "nist_sp800_63b"
+      ]
+    },
+    {
+      "id": "P13",
+      "domain": "FRAUD",
+      "prompt": "Unexpected urgency, secrecy or emotional pressure makes me pause before acting.",
+      "recommended_action": "Use a deliberate pause rule for requests involving money or credentials.",
+      "priority": "high",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P14",
+      "domain": "FRAUD",
+      "prompt": "For important actions I open the official service myself instead of trusting a message link.",
+      "recommended_action": "Navigate independently to the known official service for banking and account changes.",
+      "priority": "high",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P15",
+      "domain": "FRAUD",
+      "prompt": "Unusual requests from known people or organisations are verified through another channel.",
+      "recommended_action": "Use a separately known contact method before acting.",
+      "priority": "normal",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P16",
+      "domain": "FRAUD",
+      "prompt": "I do not install remote-access software or share verification codes because an unsolicited caller or message tells me to.",
+      "recommended_action": "Treat unsolicited remote-access or code-sharing requests as a stop condition.",
+      "priority": "high",
+      "source_refs": [
+        "nist_sp800_63b",
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P17",
+      "domain": "NETWORKS",
+      "prompt": "My home router/Wi-Fi uses current security settings and a non-default administrative credential.",
+      "recommended_action": "Review router admin credentials, update status and wireless security mode.",
+      "priority": "normal",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P18",
+      "domain": "NETWORKS",
+      "prompt": "I avoid saving passwords or leaving sessions open on shared or public devices.",
+      "recommended_action": "Do not save credentials and sign out fully on shared devices.",
+      "priority": "high",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P19",
+      "domain": "NETWORKS",
+      "prompt": "I periodically review app permissions and remove access that is not needed.",
+      "recommended_action": "Review location, contacts, microphone, camera and account permissions.",
+      "priority": "normal",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P20",
+      "domain": "NETWORKS",
+      "prompt": "I use protective DNS or equivalent network protection where appropriate and available.",
+      "recommended_action": "Consider a reputable protective DNS or equivalent network protection appropriate to your environment.",
+      "priority": "normal",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P21",
+      "domain": "RECOVERY",
+      "prompt": "I know the first actions to take if an important account is compromised.",
+      "recommended_action": "Write a short recovery order: regain control, change or revoke credentials and review recovery settings.",
+      "priority": "high",
+      "source_refs": [
+        "nist_sp800_63b"
+      ]
+    },
+    {
+      "id": "P22",
+      "domain": "RECOVERY",
+      "prompt": "I know how to revoke old sessions, devices or credentials after suspected compromise.",
+      "recommended_action": "Locate session/device management for your primary email before you need it.",
+      "priority": "normal",
+      "source_refs": [
+        "nist_sp800_63b"
+      ]
+    },
+    {
+      "id": "P23",
+      "domain": "RECOVERY",
+      "prompt": "I know where to report cyber incidents or fraud and when financial loss also requires contacting my bank or police.",
+      "recommended_action": "Save official reporting and bank contact paths before an incident.",
+      "priority": "high",
+      "source_refs": [
+        "ncsc_top_tips"
+      ]
+    },
+    {
+      "id": "P24",
+      "domain": "RECOVERY",
+      "prompt": "After a security incident I review what else may be affected instead of fixing only the visible symptom.",
+      "recommended_action": "Check linked accounts, recovery channels, payment methods and affected devices.",
+      "priority": "normal",
+      "source_refs": [
+        "nist_sp800_63b",
+        "ncsc_top_tips"
+      ]
+    }
+  ]
+}
