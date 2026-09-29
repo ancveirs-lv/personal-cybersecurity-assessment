@@ -22,6 +22,10 @@ Response-state meanings are part of the machine-readable methodology contract in
 
 `NOT_APPLICABLE` is reserved for genuinely irrelevant items and requires a rationale in structured assessment input.
 
+## Elevated threat profile
+
+This self-assessment covers general personal cybersecurity. If your risk includes targeted mercenary spyware, Pegasus/Predator/Graphite, or data-correlation/re-identification concerns, use [Advanced Digital Threat Defense](https://github.com/ancveirs-lv/advanced-digital-threat-defense) as the specialist follow-on guide.
+
 ## Quick start
 
 ```bash
