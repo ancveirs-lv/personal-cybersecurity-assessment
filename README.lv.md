@@ -22,6 +22,10 @@ Atbilžu stāvokļu nozīmes ir daļa no mašīnlasāmā metodoloģijas līguma 
 
 `NOT_APPLICABLE` / `Nav attiecināms` paredzēts tikai patiesi neattiecināmiem punktiem un strukturētā ievadē prasa pamatojumu.
 
+## Paaugstināta riska profils
+
+Šis pašnovērtējums aptver vispārīgu personīgo kiberdrošību. Ja risks ietver mērķētu algotu spiegprogrammatūru, Pegasus/Predator/Graphite vai datu korelācijas/reidentifikācijas risku, izmanto [Advanced Digital Threat Defense](https://github.com/ancveirs-lv/advanced-digital-threat-defense) kā specializēto turpinājumu.
+
 ## Ātra palaišana
 
 ```bash
